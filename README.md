@@ -22,9 +22,7 @@ As a potential solution, a multi-agent traffic control system based on a deep Q-
 ## Key Features
 
 - **Real-World Topography:** Map data extracted directly from OpenStreetMap (OSM) and compiled into a realistic 11-junction road network using SUMO's `netconvert`.
-- **Predictive State Space:** Incorporates a 4-dimensional state feature vector per agent:
-  $$\text{State} = [\text{green\_queue}, \text{red\_queue}, \text{current\_phase}, \text{approaching\_vehicles}]$$
-  This lookahead capability prevents bottlenecks before vehicles come to a complete halt.
+- **Predictive State Space:** Incorporates a 4-dimensional state feature vector per agent.
 - **Shared-Parameter Multi-Agent Architecture:** A unified Deep Q-Network controls all 11 traffic intersections simultaneously, encouraging cooperative flow coordination across adjacent junctions.
 - **Rush-Hour Stress Testing:** Evaluated under dynamic traffic conditions featuring a mid-simulation surge in side-street vehicle density.
 
